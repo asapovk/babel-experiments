@@ -1,0 +1,15 @@
+{
+  "name": "parser-experiments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Konstantin Astapov",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx babel source/index.js --out-file out/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "md5": "^2.3.0"
+  }
+}
