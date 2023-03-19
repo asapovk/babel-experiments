@@ -5,7 +5,8 @@
   "author": "Konstantin Astapov",
   "license": "MIT",
   "scripts": {
-    "compile": "npx babel source/index.js --out-file out/index.js"
+    "compile": "npx babel source/index.js --out-file out/index.js",
+    "scan": "npx babel source/function.js --out-file out/function.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
