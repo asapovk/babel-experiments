@@ -3,13 +3,14 @@ const pathNode = require('node:path');
 
 
 const BabelISSRPlugin = (api) => {
-  let count= 0;
+  let names = [];
   const t = api.types;
   return {
     name: 'find-component',
     visitor: {
-        VariableDeclaration(path, { opts: options, file }) {
-            console.log(path.node)
+      VariableDeclarator(path, { opts: options, file }) {
+            names.push(path.node.id.name)
+            console.log(names)
       },
     },
   };
